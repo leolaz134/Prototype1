@@ -5,16 +5,11 @@ public class FollowPlayer : MonoBehaviour
 {
     //Public variable to store a reference to the player game object
     public GameObject player;
-    private Vector3 offset = new Vector3(0, 5, -14);
+    [SerializeField] private Vector3 offset = new Vector3(0, 5, -14);
     //Camera swap variables
     private bool cameraSwapInput;
     int cameraState = 0;
     public KeyCode swapKey;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     //LateUpdate is called after Update each frame
